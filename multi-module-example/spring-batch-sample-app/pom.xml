@@ -42,12 +42,13 @@
     	</dependency>
     	<dependency>
 		    <groupId>com.demo</groupId>
-			<artifactId>spring-boot-sample-app</artifactId>
-    	</dependency> 
-    	
-    	<dependency>
-		    <groupId>com.demo</groupId>
     		<artifactId>multi-module-app-common-lib</artifactId>
+    		<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-web</artifactId>
+				</exclusion>
+			</exclusions>
     	</dependency>
     	
 	</dependencies>
